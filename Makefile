@@ -2,7 +2,7 @@
 
 PROJECT = gun
 PROJECT_DESCRIPTION = HTTP/1.1, HTTP/2 and Websocket client for Erlang/OTP.
-PROJECT_VERSION = 1.0.0-pre.2
+PROJECT_VERSION = 1.0.0-pre.4
 
 # Options.
 
@@ -18,8 +18,8 @@ CI_OTP ?= OTP-19.0.7 OTP-19.1.6 OTP-19.2.3 OTP-19.3.6.2 OTP-20.0.2
 LOCAL_DEPS = ssl
 
 DEPS = cowlib ranch
-dep_cowlib = git https://github.com/ninenines/cowlib master
-dep_ranch = git https://github.com/ninenines/ranch master
+dep_cowlib = hex 1.3.0
+dep_ranch = hex 1.4.0
 
 TEST_DEPS = ct_helper
 dep_ct_helper = git https://github.com/extend/ct_helper.git master
